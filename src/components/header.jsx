@@ -6,7 +6,7 @@ const Header = ({ darkMode, setDarkMode }) => {
                 <h1 className="text-4xl font-serif font-bold ">Sorting Visualizer</h1>
             </div>
             <div className="flex flex-row gap-96 items-center">
-                <div className="flex mx-3 border-2 border-purple-600 toggle-switch">
+                <div className="flex mx-10 border-2 border-purple-600 toggle-switch">
                     <label
                         className="cursor-pointer relative h-[3em] w-[6em] rounded-full bg-[hsl(0,0%,7%)] shadow-[0px_2px_4px_0px_rgb(18,18,18,0.25),0px_4px_8px_0px_rgb(18,18,18,0.35)]"
                     >
