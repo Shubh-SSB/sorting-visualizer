@@ -25,11 +25,8 @@ function App() {
     <>
       <div className={`flex m-auto w-max gap-4 rounded-lg flex-col-reverse border-4 p-4 border-purple-600 ${darkMode ? "dark bg-black/75 text-white" : "bg-gray-200 text-black"}`}>
         <div className='flex flex-row'>
-          <div className="flex rounded-lg w-max border-2 border-purple-600 items-center ">
+          <div className="flex rounded-lg w-max items-center ">
             <SortingVisualizer darkMode={darkMode} />
-          </div>
-          <div className="flex border-2 w-full rounded-lg mx-4 border-purple-600 items-center text-justify">
-            <SortingInfo />
           </div>
         </div>
         <div className=''>
