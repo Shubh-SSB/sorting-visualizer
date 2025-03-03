@@ -137,7 +137,7 @@ const SortingVisualizer = ({ darkMode }) => {
 
   return (
     <div className="flex flex-row">
-      <div className="flex flex-col items-center mt-2">
+      <div className="flex flex-col border-2 w-full rounded-lg mx-4 border-purple-600 items-center mt-2">
         <div className="m-auto mb-5 flex flex-row gap-5 text-xl font-semibold">
           <div className="flex m-auto flex-row">Step : <div className="mx-1 text-purple-700">{currentStep + 1}</div> / {sortingSteps.length || 1}</div>
           <div className="flex m-auto flex-row">Swaps : <div className="mx-1 text-purple-700">{swapcount}</div></div>
@@ -212,8 +212,8 @@ const SortingVisualizer = ({ darkMode }) => {
             <button onClick={handleSort} className="bg-gray-900 text-white px-4 py-2 rounded-lg border-2 border-purple-600 hover:text-purple-500"><FontAwesomeIcon icon={faSort} /> Sort</button>
           </div>
         </div>
-        <div className="flex flex-row gap-4 mt-5 mb-4 mx-4">
-          <div className="mt-4">
+        <div className="flex flex-row gap-4  mb-4 mx-4">
+          <div className="mt-4 mb-4">
             <label className="m-auto p-2 text-xl font-semibold">Algorithm :</label>
             <select
               className="ml-3 px-4 text-white py-2 bg-gray-900 border-purple-400 border-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 hover:text-purple-400 "
@@ -223,7 +223,6 @@ const SortingVisualizer = ({ darkMode }) => {
               <option value="BubbleSort">Bubble Sort</option>
               <option value="QuickSort">Quick Sort</option>
             </select>
-            <Sortinginfo algorithm={algorithm} />
           </div>
           <div className="mt-4 mb-4">
             <label className="m-auto p-2 text-xl font-semibold">SortOrder :</label>
@@ -237,6 +236,9 @@ const SortingVisualizer = ({ darkMode }) => {
             </select>
           </div>
         </div>
+      </div>
+      <div className="flex mt-2 border-2 w-full rounded-lg mx-4 border-purple-600 items-center text-justify">
+        <Sortinginfo algorithm={algorithm} />
       </div>
     </div>
   );
