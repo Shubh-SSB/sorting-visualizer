@@ -58,7 +58,8 @@ This makes it suitable for limited memory environments. `
 
             Best case: This happens when the pivot is always close to the middle of the array. 
 
-            Worst case: This happens when the pivot selection consistently results in unbalanced partitions. 
+            Worst case: This happens when the pivot selection consistently,
+            which results in unbalanced partitions. 
 
             Advantages 
 
